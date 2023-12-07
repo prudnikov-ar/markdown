@@ -5,6 +5,10 @@
 # Завершённая работа
 
 def bold(s: str) -> str:
+    '''
+    A function that converts markdown-bold to html-bold.
+    Replaces first ** occurrence with <strong> and second with </strong>
+    '''
     pair = s.count("**")
     for _ in range(pair//2):
         s = s.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
@@ -12,6 +16,10 @@ def bold(s: str) -> str:
 
 
 def itallic(s: str) -> str:
+    '''
+    A function that converts markdown-italics to html-italics.
+    Replaces first * occurrence with <em> and second with </em>
+    '''
     once = s.count("*")
     for _ in range(once//2):
         s = s.replace("*", "<em>", 1).replace("*", "</em>", 1)
@@ -19,6 +27,9 @@ def itallic(s: str) -> str:
 
 
 while True:
+    '''
+    Main program loop which should have been a function with __name__ check.
+    '''
 
     print("Меню")
     print()
