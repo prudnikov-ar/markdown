@@ -2,11 +2,10 @@
 Вариант 9
 """
 
+# Завершённая работа
 
 def bold(s: str) -> str:
     pair = s.count("**")
-    if pair == 0:
-        return s
     for _ in range(pair//2):
         s = s.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
     return s
@@ -14,8 +13,6 @@ def bold(s: str) -> str:
 
 def itallic(s: str) -> str:
     once = s.count("*")
-    if once == 0:
-        return s
     for _ in range(once//2):
         s = s.replace("*", "<em>", 1).replace("*", "</em>", 1)
     return s
@@ -26,7 +23,7 @@ while True:
     print("Меню")
     print()
     print("Введите 1 если хотите отформатировать строку курсивом")
-    print("Введите 2 если хотите отформатировать строку полужирным")
+    print("Введите 2 если хотите отформатировать строку полужирным") 
     print("Введите 0 если хотите завершить программу")
     print()
 
