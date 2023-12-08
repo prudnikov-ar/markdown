@@ -14,6 +14,8 @@ def bold(s: str) -> str:
         s = s.replace("**", "<strong>", 1).replace("**", "</strong>", 1)
     return s
 
+def for_change():
+    pass
 
 def itallic(s: str) -> str:
     '''
